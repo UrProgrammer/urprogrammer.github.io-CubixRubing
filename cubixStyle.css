@@ -1,0 +1,191 @@
+* {
+    font-family: 'Comfortaa', Verdana;
+    background-color: black;
+    color: white;
+}
+select {
+    border: none;
+}
+select:hover{
+    cursor: pointer;
+    background-color:rgb(26, 26, 26);
+}
+.site-header {
+     /* Light grey background */
+    padding: 20px 10px; /* Add some padding */
+    overflow: hidden; /* Clear floats */
+    top: 0;
+}
+/* Style the logo */
+.logo h1 {
+     
+    float: left; /* Float the logo to the left */
+    margin: 0; /* Remove default margin */
+    font-size: 25px; /* Increase font size */
+    font-weight: 300; /* Make it bold */
+}
+.logo span {
+    font-weight: 900;
+}
+
+button {
+    text-decoration: none;
+    border: none;
+}
+
+.TimerScramble button {
+    text-decoration: none;
+    border: none;
+    margin-left: 75px;
+    margin-bottom: 18px;
+}
+.timerPuzzle {
+    margin-right: 50px;
+} 
+button:hover {
+    background-color:rgb(26, 26, 26);
+    cursor: pointer;
+}
+
+.TimerScramble button:hover {
+    background-color:rgb(26, 26, 26);
+    cursor: pointer;
+}
+@font-face {
+  font-family: 'Timer'; /* Give your font a name */
+  src: url('technology/Technology.ttf') format('truetype'); /* Specify the font file path and format */
+  /* You can also define font-weight and font-style if needed */
+  /* font-weight: normal; */
+  /* font-style: normal; */
+}
+#timer {
+    font-size: 100px;
+    margin: auto auto;
+    letter-spacing: 2px;
+    justify-content: center;
+    text-align: center;
+    font-family: Timer;
+}
+#status {
+    font-size: 1.2em;
+    color: #f39c12;
+    justify-content:;
+}
+#times-list {
+    margin: 40px auto auto auto;
+    max-width: 320px;
+    
+    padding: 20px 0 10px 0;
+    box-shadow: 0 0 10px #0005;
+    margin-left: 0;
+}
+#times-list h2 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 1.2em;
+    
+    letter-spacing: 1px;
+}
+#times-list ol {
+    padding-left: 1.7em;
+    margin: 0;
+    text-align: left;
+}
+#times-list li {
+    font-family: monospace;
+    font-size: 1.1em;
+    color: #eee;
+    margin-bottom: 3px;
+    line-height: 1.5;
+}
+#clear-btn {
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    padding: 2px 8px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 10px;
+}
+       
+.scrambledisplay {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+.underTimer {
+    display: flex;
+}
+
+.ScrambleDisplay2D {
+    display:flex;
+}
+
+.scramble {
+    text-align:center;
+    margin:auto;
+}
+
+.TimerScramble {
+    text-align:center;
+    justify-content: center;
+    display: flex;
+}
+
+/* Style the navigation links */
+.main-nav ul {
+    color: white;
+    list-style-type: none; /* Remove bullet points */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: flex-end; /* Align links to the right */
+}
+
+.main-nav li {
+    padding: 12px; /* Add padding to list items */
+}
+
+.main-nav a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-size: 18px; /* Set font size */
+    line-height: 25px; /* Match line height for consistent spacing */
+}
+
+/* Change link color on hover */
+
+.main-nav .yellow:hover {
+     /* Light grey background on hover */
+    color: yellow; /* Black text on hover */
+}
+.main-nav .green:hover {
+     /* Light grey background on hover */
+    color: green; /* Black text on hover */
+}
+
+.main-nav .blue:hover {
+     /* Light grey background on hover */
+    color: blue; /* Black text on hover */
+}
+.main-nav .red:hover {
+     /* Light grey background on hover */
+    color: red; /* Black text on hover */
+}
+
+
+/* Add media queries for responsiveness */
+@media screen and (max-width: 500px) {
+    .logo h1 {
+        float: none; /* Remove float on smaller screens */
+        text-align: center; /* Center the logo */
+    }
+    .main-nav ul {
+        flex-direction: column; /* Stack links vertically */
+        align-items: center; /* Center links */
+    }
+    .main-nav li {
+        text-align: center; /* Center list items */
+    }
+}
